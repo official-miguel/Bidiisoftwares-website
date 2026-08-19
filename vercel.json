@@ -3,7 +3,14 @@
   "builds": [
     {
       "src": "artifacts/api-server/src/index.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "artifacts/api-server/src/**/*",
+          "lib/api-zod/src/**/*",
+          "lib/db/src/**/*"
+        ]
+      }
     }
   ],
   "routes": [
