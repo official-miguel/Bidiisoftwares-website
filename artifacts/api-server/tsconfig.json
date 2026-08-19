@@ -7,9 +7,9 @@
     "types": ["node"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "noEmit": true,
-    "noEmitOnError": false,
-    "skipLibCheck": true
+    "noEmitOnError": false
   },
   "include": ["src"]
 }

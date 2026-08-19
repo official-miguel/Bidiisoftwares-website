@@ -1,5 +1,22 @@
 {
-  "buildCommand": "node build.mjs",
-  "installCommand": "pnpm install --no-frozen-lockfile",
-  "outputDirectory": "dist"
+  "version": 2,
+  "builds": [
+    {
+      "src": "artifacts/api-server/src/index.ts",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "artifacts/api-server/src/**",
+          "lib/api-zod/src/**",
+          "lib/db/src/**"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "artifacts/api-server/src/index.ts"
+    }
+  ]
 }
