@@ -3,21 +3,25 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
-import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
-
-// PORT and BASE_PATH are only required at dev/preview time, not during a static build.
+// PORT and BASE_PATH are only needed at dev/preview time.
+// During a static Vite build neither is required — use safe defaults.
 const port = Number(process.env.PORT ?? 3000);
 const basePath = process.env.BASE_PATH ?? '/';
 
-export default defineConfig({
+const isReplit =
+  process.env.NODE_ENV !== 'production' &&
+  process.env.REPL_ID !== undefined;
+
+export default defineConfig(async () => ({
   base: basePath,
   plugins: [
     react(),
     tailwindcss(),
-    runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== 'production' &&
-    process.env.REPL_ID !== undefined
+    ...(isReplit
       ? [
+          await import('@replit/vite-plugin-runtime-error-modal').then((m) =>
+            m.default(),
+          ),
           await import('@replit/vite-plugin-cartographer').then((m) =>
             m.cartographer({
               root: path.resolve(import.meta.dirname, '..'),
@@ -60,4 +64,4 @@ export default defineConfig({
     host: '0.0.0.0',
     allowedHosts: true,
   },
-});
+}));
