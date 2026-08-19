@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd artifacts/bidii-site && npx vite build --config vite.config.ts",
+  "buildCommand": "node build-site.mjs",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "artifacts/bidii-site/dist/public",
   "framework": null
