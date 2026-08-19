@@ -1,15 +1,9 @@
 import express, { type Express } from "express";
 import cors from "cors";
-import * as pinoHttpLib from "pino-http";
+import { pinoHttp } from "pino-http";
 import type { IncomingMessage, ServerResponse } from "http";
 import router from "./routes";
 import { logger } from "./lib/logger";
-
-// pino-http is a CJS module; with moduleResolution:bundler and no esModuleInterop
-// the callable is exposed as .default — fall back to the namespace itself at runtime.
-const pinoHttp: typeof pinoHttpLib.default =
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (pinoHttpLib as any).default ?? pinoHttpLib;
 
 const app: Express = express();
 
