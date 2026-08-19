@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bidii-learning-hub--ruthlewis10423.replit.app/sitemap.xml

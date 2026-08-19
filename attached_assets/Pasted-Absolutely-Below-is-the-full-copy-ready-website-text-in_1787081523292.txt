@@ -1,0 +1,1254 @@
+Absolutely. Below is the **full copy-ready website text**, including the expanded **Discipline & Achievements** module. You can copy this directly into your website planning/development document.
+
+---
+
+# BIDII — COMPLETE WEBSITE COPY
+
+## THE AI-POWERED SCHOOL MANAGEMENT PLATFORM FOR MODERN KENYAN SCHOOLS
+
+### Core Brand Message
+
+**Bidii is the AI-powered operating system for the modern Kenyan school.**
+
+One connected platform for managing students, CBC academics, attendance, finance, boarding, library, discipline, achievements, communication and school operations — with AI helping your school analyze information, automate repetitive work and make better decisions.
+
+**Manage your school. Understand your learners. Let AI do the heavy work.**
+
+---
+
+# 1. LANDING PAGE
+
+## HERO SECTION
+
+### EYEBROW
+
+**THE AI-POWERED SCHOOL MANAGEMENT PLATFORM**
+
+### HEADLINE
+
+# Run your entire school from one intelligent platform.
+
+### SUBHEADLINE
+
+Bidii brings students, CBC academics, attendance, finance, boarding, library, discipline, achievements, communication and school operations together — with AI that helps your school plan, analyze and get work done.
+
+### PRIMARY BUTTON
+
+**Book a Demo**
+
+### SECONDARY BUTTON
+
+**See Bidii in Action**
+
+### SUPPORTING TEXT
+
+**One school. One connected system. Better decisions.**
+
+---
+
+# 2. VALUE STRIP
+
+### CBC-READY ACADEMIC MANAGEMENT
+
+Built around the changing needs of Kenyan education.
+
+### AI-ASSISTED SCHOOL OPERATIONS
+
+From timetables to analysis, AI helps your team get more done.
+
+### SCHOOL-WIDE ANALYTICS
+
+Turn everyday school data into information your leadership can act on.
+
+### CONNECTED SCHOOL MANAGEMENT
+
+Students, academics, finance, attendance, boarding, library and records in one platform.
+
+### CONTROLLED ACCESS
+
+Give every member of your team the information and tools they need — without giving everyone access to everything.
+
+---
+
+# 3. THE PROBLEM
+
+### EYEBROW
+
+**YOUR SCHOOL HAS OUTGROWN DISCONNECTED SYSTEMS**
+
+### HEADLINE
+
+# Your school shouldn't have to run on spreadsheets, registers and scattered systems.
+
+Student records in one place.
+
+Attendance somewhere else.
+
+Fees in spreadsheets.
+
+Timetables on paper.
+
+Library loans in registers.
+
+Academic records in another system.
+
+Discipline files in cabinets.
+
+Achievements stored as certificates that are easily forgotten.
+
+Important communication scattered across different channels.
+
+When information is disconnected, running the school becomes harder than it needs to be.
+
+### BIDII SOLUTION
+
+**Bidii brings the school together.**
+
+One connected platform. One school record. One place to understand what is happening.
+
+### CTA
+
+**See How Bidii Connects Your School**
+
+---
+
+# 4. THE BIDII DIFFERENCE
+
+### HEADLINE
+
+# One school. One system. Complete visibility.
+
+A learner isn't just a mark.
+
+A learner isn't just an attendance record.
+
+A learner isn't just a fee balance.
+
+A learner isn't just a discipline case.
+
+A learner is a whole person moving through a school journey.
+
+Bidii connects the information around that journey so authorized staff can understand the bigger picture.
+
+### CLOSING TEXT
+
+**Stop moving information between systems. Start running your school from one connected platform.**
+
+---
+
+# 5. BIDII AI
+
+### EYEBROW
+
+**BIDII AI**
+
+### HEADLINE
+
+# AI isn't an add-on to Bidii. It's part of how Bidii works.
+
+Bidii uses AI where it can save real school time and turn information into useful action.
+
+From building timetables to analyzing learner performance, generating draft remarks, summarizing records and answering questions about your school, AI is built into the Bidii experience.
+
+### AI CAPABILITIES
+
+**BUILD**
+
+AI-assisted timetable generation helps schools create schedules around teachers, lessons, periods, availability and other constraints.
+
+**ANALYZE**
+
+Use AI to analyze academic and school information and uncover useful patterns.
+
+**CREATE**
+
+Generate draft remarks, notices and school communication faster.
+
+**SUMMARIZE**
+
+Turn authorized records into concise summaries.
+
+**ASK**
+
+Use Soma AI to ask questions about your school in natural language.
+
+### CLOSING
+
+**Don't buy an AI chatbot. Buy a school system that knows how to use AI.**
+
+### CTA
+
+**Explore Bidii AI**
+
+---
+
+# 6. CBC INTELLIGENCE
+
+### EYEBROW
+
+**BUILT FOR THE CBC ERA**
+
+### HEADLINE
+
+# CBC needs more than digital record keeping.
+
+The transition to competency-based education changes what schools need to understand about learners.
+
+Bidii helps schools capture, organize and understand learner progress across the CBC structure.
+
+### CBC STRUCTURE
+
+**Learning Area → Strand → Sub-Strand**
+
+Bidii provides a structured environment for capturing learner performance and turning assessment information into useful academic intelligence.
+
+### PERFORMANCE LEVELS
+
+**EE — Exceeds Expectation**
+
+**ME — Meets Expectation**
+
+**AE — Approaches Expectation**
+
+**BE — Below Expectation**
+
+### HEADLINE
+
+# One assessment tells you where a learner is. Progress tells you where they're going.
+
+Bidii helps schools compare assessment information across periods so teachers and school leadership can identify improvement, decline and areas requiring support.
+
+### CLOSING
+
+**More information should lead to better decisions — not more spreadsheets.**
+
+### CTA
+
+**Explore CBC Intelligence**
+
+---
+
+# 7. SCHOOL ANALYTICS
+
+### EYEBROW
+
+**SCHOOL INTELLIGENCE**
+
+### HEADLINE
+
+# Your school's data is already telling you something. Bidii helps you hear it.
+
+Every day, schools generate information.
+
+Attendance.
+
+Assessments.
+
+Fees.
+
+Library activity.
+
+Boarding records.
+
+Discipline.
+
+Achievements.
+
+Student movement.
+
+Instead of allowing that information to remain isolated, Bidii turns it into school intelligence.
+
+### ANALYTICS INCLUDE
+
+**Learner Progress Intelligence**
+
+Understand how learners are progressing over time.
+
+**Learning Area Performance**
+
+Identify strengths and areas requiring attention.
+
+**Learners Requiring Attention**
+
+Surface configured performance or attendance concerns for follow-up.
+
+**Attendance Patterns**
+
+Move beyond today's absence list and understand recurring attendance patterns.
+
+**Class & Department Comparison**
+
+Compare relevant academic and operational information.
+
+**Assessment Completion**
+
+Know whether expected assessment information has been captured.
+
+**Student 360°**
+
+Understand the learner through relevant academic, attendance, library, discipline, achievement and boarding information according to permissions.
+
+**Finance Intelligence**
+
+Understand collection, outstanding balances and debt aging.
+
+**Boarding Intelligence**
+
+Understand occupancy, allocation, movement and operational patterns.
+
+**Library Intelligence**
+
+Understand what students are actually borrowing and using.
+
+---
+
+# 8. DISCIPLINE & ACHIEVEMENTS
+
+## HERO
+
+### EYEBROW
+
+**STUDENT DEVELOPMENT & RECORDS**
+
+### HEADLINE
+
+# See the complete story of every learner — not just their grades.
+
+Bidii brings discipline records, achievements, interventions, supporting documents and student history together in one structured learner record.
+
+Understand what happened.
+
+Understand what action was taken.
+
+Understand what the learner achieved.
+
+Understand how the learner's journey has developed over time.
+
+### CTA
+
+**Explore Discipline & Achievements**
+
+---
+
+# 9. DISCIPLINE MANAGEMENT
+
+### HEADLINE
+
+# Turn scattered discipline files into a complete student history.
+
+Paper files can tell you that something happened.
+
+Bidii helps your school keep the **full context** around what happened.
+
+Record incidents, actions taken, follow-ups and supporting information in a structured timeline connected to the learner's profile.
+
+### DISCIPLINE RECORDS
+
+Capture important information about a disciplinary incident in a structured record.
+
+### ACTION & FOLLOW-UP
+
+Record the response taken and keep track of subsequent follow-up.
+
+### DISCIPLINE TIMELINE
+
+View the learner's discipline history chronologically instead of searching through separate files.
+
+### SUPPORTING DOCUMENTS
+
+Keep relevant documents and attachments connected to the appropriate record.
+
+### CONTROLLED ACCESS
+
+Sensitive student records remain available only to authorized users.
+
+### AI DISCIPLINE SUMMARY
+
+Use AI to summarize authorized discipline information so staff can quickly understand a learner's history before reviewing the underlying records.
+
+---
+
+# 10. AI DISCIPLINE INTELLIGENCE
+
+### EYEBROW
+
+**BIDII AI**
+
+### HEADLINE
+
+# Let AI summarize the history. Let people make the decision.
+
+When a learner has a long record, understanding the bigger picture can take time.
+
+Bidii's AI can summarize authorized discipline records into a clearer overview, helping staff understand the history quickly while still allowing them to review the original records.
+
+### IMPORTANT MESSAGE
+
+**AI assists with understanding records. School staff remain responsible for decisions and actions.**
+
+---
+
+# 11. ACHIEVEMENTS
+
+### EYEBROW
+
+**LEARNER ACHIEVEMENTS**
+
+### HEADLINE
+
+# Don't let a learner's achievements disappear into a certificate file.
+
+A learner is more than academic results and disciplinary records.
+
+Bidii gives schools a structured way to record achievements, awards, recognitions and milestones throughout a learner's school journey.
+
+Academic excellence.
+
+Sports.
+
+Leadership.
+
+Clubs.
+
+Competitions.
+
+Creative achievements.
+
+School awards.
+
+Other recognized accomplishments.
+
+### CLOSING
+
+**Every achievement tells part of a learner's story. Bidii helps your school keep that story.**
+
+---
+
+# 12. ACHIEVEMENT RECORDS
+
+### ACHIEVEMENT RECORDS
+
+Record what the learner achieved, when it happened and the relevant category.
+
+### ACHIEVEMENT CATEGORIES
+
+Organize achievements around areas such as:
+
+* Academics
+* Sports
+* Leadership
+* Clubs
+* Competitions
+* Arts and creativity
+* Awards
+* Other school-defined achievements
+
+### SHARED ACHIEVEMENTS
+
+Recognize achievements involving multiple learners without creating disconnected duplicate records.
+
+### ACHIEVEMENT HISTORY
+
+Build a chronological record of the learner's accomplishments.
+
+### SUPPORTING EVIDENCE
+
+Attach relevant certificates, documents or supporting files where appropriate.
+
+---
+
+# 13. THE COMPLETE LEARNER
+
+### HEADLINE
+
+# Understand the learner, not just the incident.
+
+Traditional school systems often separate marks, attendance, discipline, certificates and other information into completely different records.
+
+Bidii brings relevant information together around the learner's journey.
+
+### LEARNER JOURNEY
+
+**Academic Progress → Attendance → Discipline → Achievements → Activities → Student History**
+
+This gives authorized staff a broader understanding of both the learner's strengths and the areas where support may be needed.
+
+### CLOSING
+
+**That's the difference between storing student data and understanding the learner.**
+
+---
+
+# 14. STUDENT DEVELOPMENT TIMELINE
+
+### HEADLINE
+
+# See the journey, not isolated events.
+
+Bidii can bring important student events into a chronological view, helping authorized staff understand how the learner's school journey has developed over time.
+
+Instead of asking only:
+
+**"What happened?"**
+
+schools can begin asking:
+
+# "What does the learner's journey tell us?"
+
+---
+
+# 15. DISCIPLINE ANALYTICS
+
+### EYEBROW
+
+**SCHOOL INTELLIGENCE**
+
+### HEADLINE
+
+# Turn discipline records into school intelligence.
+
+Bidii doesn't just store individual cases.
+
+It can help authorized school leadership understand broader discipline patterns.
+
+### SCHOOLS CAN INVESTIGATE
+
+* Discipline activity by class
+* Discipline activity over time
+* Recurring categories of incidents
+* Learners requiring follow-up
+* Intervention history
+* Department or school-level patterns
+* Changes in discipline activity over time
+
+### CLOSING
+
+**The goal isn't more discipline data. The goal is better visibility.**
+
+---
+
+# 16. ACHIEVEMENT INTELLIGENCE
+
+### HEADLINE
+
+# See where your learners are excelling.
+
+Achievements can reveal strengths that examination results alone cannot show.
+
+Bidii helps schools understand participation and recognition across different areas of learner development.
+
+### AREAS INCLUDE
+
+* Academic competitions
+* Sports
+* Leadership
+* Clubs and societies
+* Arts and creativity
+* School competitions
+* Awards and recognition
+* Other school-defined achievements
+
+### CLOSING
+
+**Celebrate success. Track growth. Build a richer learner record.**
+
+---
+
+# 17. PRINCIPAL VIEW
+
+### HEADLINE
+
+# See the bigger picture across the school.
+
+School leadership can use aggregated discipline and achievement information to identify patterns, recognize success and determine where additional attention may be required.
+
+### QUESTIONS BIDII CAN HELP ANSWER
+
+**Where are discipline concerns increasing?**
+
+**Which classes require attention?**
+
+**What types of incidents occur most often?**
+
+**Are interventions being followed up?**
+
+**Where are our learners excelling?**
+
+**Which achievements are being recorded across the school?**
+
+**Are we recognizing learner success beyond academics?**
+
+---
+
+# 18. TEACHER VIEW
+
+### HEADLINE
+
+# Give teachers the context they need.
+
+Teachers can access relevant information according to their permissions, helping them understand more than just today's attendance or assessment.
+
+They can access relevant academic information, attendance history, achievements and other permitted student records from one connected environment.
+
+### CLOSING
+
+**Better context helps teachers understand the learner behind the record.**
+
+---
+
+# 19. STUDENT MANAGEMENT
+
+### HEADLINE
+
+# Every student. Every record. One connected profile.
+
+Manage admissions, student profiles, classes, subjects, transfers, history and relevant school records from one place.
+
+### FEATURES
+
+* Structured student profiles
+* Admission information
+* Class and stream information
+* Search by name
+* Search by admission number
+* Bulk import
+* Student history
+* Connected academic records
+* Attendance history
+* Library information
+* Finance information
+* Discipline records
+* Achievements
+* Boarding information
+
+### CLOSING
+
+**One learner. One connected record.**
+
+---
+
+# 20. ATTENDANCE
+
+### HEADLINE
+
+# Attendance that takes seconds, not paperwork.
+
+Teachers can record attendance digitally while Bidii builds the learner's attendance history automatically.
+
+But Bidii goes further.
+
+### HEADLINE
+
+# Move from today's absence list to attendance intelligence.
+
+Understand recurring patterns and identify learners who may require attention.
+
+### CTA
+
+**Explore Attendance**
+
+---
+
+# 21. TIMETABLE
+
+### HEADLINE
+
+# Build a timetable without building a headache.
+
+Configure periods, lessons, electives, teacher availability and scheduling preferences.
+
+Then let Bidii's AI assist with the heavy planning.
+
+### FEATURES
+
+* Visual timetable grid
+* Lesson configuration
+* Period configuration
+* Elective groups
+* Teacher availability
+* Scheduling preferences
+* Conflict prevention
+* AI-assisted generation
+* Draft and published versions
+* Slot locking
+* Change history
+
+### AI MESSAGE
+
+**Tell Bidii how your timetable should work.**
+
+Describe your scheduling requirements and Bidii can help translate them into timetable constraints.
+
+### CLOSING
+
+**AI does the heavy planning. Your school remains in control.**
+
+---
+
+# 22. FINANCE
+
+### HEADLINE
+
+# Know what's paid, what's outstanding and what needs attention.
+
+Manage invoices, payments, balances, debtors and collection reporting from one financial workspace.
+
+### FINANCE INTELLIGENCE
+
+Know:
+
+* Total invoiced
+* Total collected
+* Outstanding balances
+* Collection rate
+* Active debtors
+* Debt aging
+* Class-level collection patterns
+
+### DEBT AGING
+
+**0–30 days**
+
+**31–60 days**
+
+**61–90 days**
+
+**90+ days**
+
+### M-PESA
+
+Supported M-Pesa integration can reduce manual matching of incoming payments while ambiguous transactions can be routed for review.
+
+### CLOSING
+
+**From payment records to financial intelligence.**
+
+---
+
+# 23. BOARDING
+
+### HEADLINE
+
+# Know exactly where every student belongs.
+
+Manage:
+
+* Dormitories
+* Rooms
+* Cubicles
+* Beds
+* Student allocation
+* Transfers
+* Inspections
+* Boarding records
+* Movement
+
+### BOARDING INTELLIGENCE
+
+Go beyond occupancy.
+
+Understand:
+
+* Bed utilization
+* Boarding population
+* Inspection history
+* Student movement
+* Attendance
+* Discipline activity
+* Configurable operational indicators
+
+### CLOSING
+
+**Know your boarding school — not just your boarding numbers.**
+
+---
+
+# 24. LIBRARY
+
+### HEADLINE
+
+# A library that keeps track of itself.
+
+Manage books, copies, QR workflows, borrowers, loans, returns, fines, reservations and circulation history from one connected environment.
+
+### LIBRARY INTELLIGENCE
+
+Know:
+
+* What students borrow most
+* Which books are overdue
+* Which titles are in high demand
+* Which books are underused
+* Renewal activity
+* Reservation demand
+* Fines
+* Book condition
+
+### AI / ANALYTICS MESSAGE
+
+**Use real borrowing demand to make better library decisions.**
+
+### OFFLINE MESSAGE
+
+The Bidii library companion is designed to support essential circulation work when connectivity is unreliable, with activity synchronized when connectivity returns.
+
+---
+
+# 25. COMMUNICATION
+
+### HEADLINE
+
+# One message. The right people. A record of what happened.
+
+Organize communication for parents, students and staff.
+
+Create targeted messages, reusable communication and track delivery where supported.
+
+### CLOSING
+
+**Make school communication more organized and less scattered.**
+
+---
+
+# 26. CALENDAR & TEACHER ON DUTY
+
+### HEADLINE
+
+# Keep the school schedule organized.
+
+Manage school events, important dates and teacher duty rosters from one place.
+
+### AI-ASSISTED DUTY SCHEDULING
+
+AI can help distribute responsibilities around teacher availability and existing timetable information.
+
+### CLOSING
+
+**Less manual scheduling. More organized school operations.**
+
+---
+
+# 27. STAFF & PERMISSIONS
+
+### HEADLINE
+
+# Give every member of staff the tools and access they need.
+
+Manage teaching and non-teaching staff, departments, responsibilities and permissions from one system.
+
+### CORE MESSAGE
+
+**Access follows responsibility.**
+
+Staff don't need unrestricted access to do their jobs.
+
+Teachers see what they need.
+
+HODs see what they need.
+
+Bursars see what they need.
+
+Librarians see what they need.
+
+Principals can see the wider school.
+
+---
+
+# 28. SOMA AI
+
+### EYEBROW
+
+**MEET SOMA**
+
+### HEADLINE
+
+# Meet the intelligence inside your school.
+
+Soma is Bidii's built-in AI assistant.
+
+Instead of searching through different modules to find information, authorized users can ask questions naturally.
+
+### EXAMPLE QUESTIONS
+
+**"How many students are enrolled?"**
+
+**"Who is absent today?"**
+
+**"Which classes have the lowest attendance?"**
+
+**"How is this term comparing with the previous term?"**
+
+**"What is my class timetable on Wednesday?"**
+
+**"Which books does this student have out?"**
+
+**"Draft an end-of-term notice for parents."**
+
+**"Generate a draft remark based on this learner's results."**
+
+### PERMISSION MESSAGE
+
+Soma does not mean unlimited access.
+
+**Soma works with the information the user is authorized to access.**
+
+### CLOSING
+
+# Ask your school. Get the answer.
+
+---
+
+# 29. SCHOOL INTELLIGENCE
+
+### HEADLINE
+
+# The dashboard should answer one question:
+
+# What needs my attention today?
+
+Bidii helps leadership investigate:
+
+**What changed?**
+
+**Who needs attention?**
+
+**Where is performance improving?**
+
+**Where is it declining?**
+
+**Which department needs support?**
+
+**Where are attendance concerns appearing?**
+
+**Where is money outstanding?**
+
+**Which dorm needs attention?**
+
+**What is happening in the library?**
+
+**Where are our learners succeeding?**
+
+### CLOSING
+
+**Bidii turns the dashboard into a decision-making tool.**
+
+---
+
+# 30. PRINCIPAL SOLUTION
+
+### HEADLINE
+
+# See the whole school. Lead with confidence.
+
+Bidii gives school leadership a connected view of academics, attendance, finance, boarding, library, discipline, achievements and operations.
+
+With analytics and AI, information becomes easier to understand and act upon.
+
+### CTA
+
+**See the Principal Experience**
+
+---
+
+# 31. TEACHER SOLUTION
+
+### HEADLINE
+
+# Less administration. More time for learners.
+
+Access your timetable, attendance, assessments and relevant student information from one workspace.
+
+Use AI assistance for draft remarks, analysis and everyday communication.
+
+### CTA
+
+**See the Teacher Experience**
+
+---
+
+# 32. HOD SOLUTION
+
+### HEADLINE
+
+# Know your department before someone asks for the report.
+
+View department subjects, performance, assessment completion and trends within your authorized scope.
+
+### CTA
+
+**See the HOD Experience**
+
+---
+
+# 33. BURSAR SOLUTION
+
+### HEADLINE
+
+# Make every payment and balance easier to understand.
+
+Manage invoices, payments, balances, debt aging, collection rates and relevant class-level collection patterns from one financial workspace.
+
+### CTA
+
+**See the Bursar Experience**
+
+---
+
+# 34. LIBRARIAN SOLUTION
+
+### HEADLINE
+
+# Run the library with less manual work.
+
+Scan, issue, return, manage fines, track inventory and use borrowing data to understand demand.
+
+### CTA
+
+**See the Library Experience**
+
+---
+
+# 35. BOARDING TEAM SOLUTION
+
+### HEADLINE
+
+# Every dorm. Every bed. Every student accounted for.
+
+Manage allocation, movement, inspections and boarding intelligence from one platform.
+
+### CTA
+
+**See the Boarding Experience**
+
+---
+
+# 36. PARENT EXPERIENCE
+
+### HEADLINE
+
+# Stay connected to your child's school.
+
+Give parents access to the information the school chooses to share, including relevant academic, attendance, communication and other student information.
+
+### CTA
+
+**See the Parent Experience**
+
+---
+
+# 37. SECURITY
+
+### HEADLINE
+
+# Powerful school intelligence needs responsible access.
+
+Bidii is designed around controlled access and school-level data separation.
+
+People see the information appropriate to their responsibilities.
+
+### SECURITY PRINCIPLES
+
+* Role-based access
+* School-level data separation
+* Controlled AI visibility
+* Secure authentication
+* Accountable activity
+* Controlled access to sensitive records
+
+### CLOSING
+
+**Modern school management needs modern control.**
+
+---
+
+# 38. DATA MIGRATION
+
+### HEADLINE
+
+# You don't have to start from zero.
+
+Moving to Bidii doesn't mean rebuilding your school manually.
+
+Bring structured existing school information into Bidii through bulk import workflows.
+
+### CLOSING
+
+**Start with the information your school already has. Build from there.**
+
+### CTA
+
+**Talk About Migration**
+
+---
+
+# 39. WHY BIDII?
+
+### HEADLINE
+
+# Why choose Bidii?
+
+Because your school needs more than a digital filing cabinet.
+
+### BIDII GIVES YOUR SCHOOL
+
+**A CBC-first academic environment.**
+
+**AI built into real school workflows.**
+
+**Analytics that turn information into decisions.**
+
+**A complete learner record.**
+
+**Connected school operations.**
+
+**Role-based control.**
+
+**Boarding and library intelligence.**
+
+**Finance intelligence.**
+
+**AI-assisted timetabling.**
+
+**Soma AI.**
+
+### FINAL MESSAGE
+
+# Bidii doesn't just digitize your school.
+
+# It helps your school understand itself.
+
+---
+
+# 40. FINAL LANDING PAGE CTA
+
+### EYEBROW
+
+**READY FOR A BETTER WAY TO RUN YOUR SCHOOL?**
+
+### HEADLINE
+
+# Your school has outgrown paperwork. Give it a system that can keep up.
+
+Bring school management, CBC academics, analytics and AI together with Bidii.
+
+### PRIMARY CTA
+
+# Book a Bidii Demo
+
+### SECONDARY CTA
+
+# See Bidii in Action
+
+### FINAL BRAND LINE
+
+**Manage your school. Understand your learners. Let AI do the heavy work.**
+
+---
+
+# 41. ABOUT BIDII
+
+### HEADLINE
+
+# Built for the way modern Kenyan schools actually work.
+
+Bidii brings school management, CBC-focused academic workflows, analytics and AI into one connected platform.
+
+The goal is simple:
+
+**Reduce unnecessary administration.**
+
+**Improve visibility.**
+
+**Help schools make better decisions.**
+
+**Help schools better understand their learners.**
+
+### MISSION
+
+**Make school management simpler, more intelligent and more connected.**
+
+### VISION
+
+**A future where every school can use its information to make better decisions for every learner.**
+
+---
+
+# 42. FAQ
+
+### What is Bidii?
+
+Bidii is an AI-powered school management platform that connects student records, CBC academics, attendance, finance, library, boarding, communication, discipline, achievements, administration, analytics and school intelligence in one system.
+
+### Is Bidii built for Kenyan schools?
+
+Yes. Bidii is designed around Kenyan school operations and the country's transition toward competency-based education.
+
+### Does Bidii support CBC?
+
+Yes. Bidii supports the Learning Area → Strand → Sub-Strand structure and performance levels including EE, ME, AE and BE.
+
+### Does Bidii support 8-4-4?
+
+Bidii can support multiple Kenyan assessment frameworks, including 8-4-4, CBC and CBE. However, Bidii's academic experience is positioned primarily toward the CBC era.
+
+### What can Bidii AI do?
+
+Bidii AI can assist with timetable generation, school analysis, report remarks, discipline summaries, communication drafting and natural-language questions through Soma AI.
+
+### What is Soma AI?
+
+Soma is Bidii's built-in AI assistant that allows authorized users to ask questions about school information using natural language.
+
+### Can Soma access everything?
+
+No. Soma works within the user's authorized access.
+
+### Can Bidii build timetables?
+
+Yes. Bidii supports timetable configuration and AI-assisted timetable generation based on scheduling preferences and constraints.
+
+### Can Bidii manage school fees?
+
+Yes. Bidii supports invoices, payments, balances, debtor information, collection reporting and supported M-Pesa integration.
+
+### Can Bidii manage boarding schools?
+
+Yes. Bidii supports dormitories, rooms, cubicles, beds, allocation, transfers, inspections and boarding analytics.
+
+### Does Bidii have a library system?
+
+Yes. Bidii supports library inventory, QR-based circulation workflows, loans, returns, fines, reservations and library analytics.
+
+### Does Bidii have discipline management?
+
+Yes. Bidii provides structured discipline records, incident history, actions, follow-up, supporting documents, timelines, permissions and AI-assisted summaries.
+
+### Does Bidii track achievements?
+
+Yes. Schools can record learner achievements, awards, competitions, leadership, sports, clubs and other school-defined accomplishments.
+
+### Can discipline and achievements be connected to a learner?
+
+Yes. Relevant records can form part of the learner's broader student history, giving authorized staff a more complete view of the learner's journey.
+
+### Can we import existing data?
+
+Yes. Bidii supports structured bulk imports for major school datasets.
+
+---
+
+# 43. FOOTER
+
+**BIDII**
+
+### The AI-powered operating system for the modern Kenyan school.
+
+**Built for schools. Built for the CBC era. Built for better decisions.**
+
+Product | CBC Intelligence | AI | Analytics | Solutions | Security | Resources | About | Contact | Pricing | Book a Demo
+
+### Final footer CTA
+
+**Ready to run your school differently?**
+
+# Book a Bidii Demo

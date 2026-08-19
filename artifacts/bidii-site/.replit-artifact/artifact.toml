@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Bidii School Management"
+description = "A polished marketing website for Bidii, an AI-powered school management platform for modern Kenyan schools. Explains how Bidii works in simple language, showcases capabilities, plans, compatibility, and trust information with a cinematic, interactive experience."
+version = "1.0.0"
+id = "artifacts/bidii-site"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23567
+
+[services.development]
+run = "pnpm --filter @workspace/bidii-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/bidii-site", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/bidii-site/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23567"
+BASE_PATH = "/"
