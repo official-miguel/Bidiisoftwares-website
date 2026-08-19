@@ -1,7 +1,6 @@
 artifacts/api-server
 artifacts/mockup-sandbox
 scripts
-attached_assets
 references
 screenshots
 *.tsbuildinfo
