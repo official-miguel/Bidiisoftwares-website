@@ -1,4 +1,4 @@
 {
-  "buildCommand": "pnpm --filter @workspace/api-server run build",
+  "buildCommand": "pnpm install && node artifacts/api-server/build.mjs",
   "installCommand": "pnpm install"
 }
