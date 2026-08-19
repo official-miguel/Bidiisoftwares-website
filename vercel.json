@@ -1,6 +1,5 @@
 {
-  "version": 2,
-  "buildCommand": "pnpm --filter @workspace/bidii-site run build",
+  "buildCommand": "cd artifacts/bidii-site && npx vite build --config vite.config.ts",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "artifacts/bidii-site/dist/public",
   "framework": null
