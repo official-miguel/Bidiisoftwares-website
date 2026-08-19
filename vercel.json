@@ -1,22 +1,7 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "artifacts/api-server/src/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "artifacts/api-server/src/**/*",
-          "lib/api-zod/src/**/*",
-          "lib/db/src/**/*"
-        ]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "artifacts/api-server/src/index.ts"
-    }
-  ]
+  "buildCommand": "pnpm --filter @workspace/bidii-site run build",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "outputDirectory": "artifacts/bidii-site/dist/public",
+  "framework": null
 }

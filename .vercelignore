@@ -1,0 +1,8 @@
+artifacts/api-server
+artifacts/mockup-sandbox
+lib
+scripts
+attached_assets
+references
+screenshots
+*.tsbuildinfo
