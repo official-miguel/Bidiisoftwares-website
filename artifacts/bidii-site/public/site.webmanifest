@@ -1,6 +1,6 @@
 {
-  "name": "Bidii School Management System",
-  "short_name": "Bidii",
+  "name": "Bidii Schools",
+  "short_name": "Bidii Schools",
   "description": "AI-powered school management system for Kenyan schools.",
   "start_url": "/",
   "display": "standalone",
