@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
   <rect width="180" height="180" rx="32" fill="#ffffff"/>
-  <image href="/favicon.png" x="10" y="10" width="160" height="160" preserveAspectRatio="xMidYMid meet"/>
+  <image href="/favicon.png?v=2" x="10" y="10" width="160" height="160" preserveAspectRatio="xMidYMid meet"/>
 </svg>
