@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from 'react';
+﻿import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from 'react';
 import { motion, useInView } from 'framer-motion';
 import type { LucideIcon } from 'lucide-react';
 import financeScreenshot from '@assets/Screenshot_(106)_1787081748997.png';
@@ -233,42 +233,6 @@ function LegalModal({ kind, close }: { kind: Exclude<ModalKind, 'demo' | null>; 
       </div>
     </div>
   );
-}’s permissions.'],
-        ['Who can see it', 'Access follows responsibility. Staff, parents and other users only see the information the school has chosen to share with them.'],
-        ['Your choices', 'Schools can request clarification, correction or export of their information. Talk to us if a record needs attention.'],
-      ],
-    },
-    conditions: {
-      title: 'Conditions & acceptable use',
-      intro: 'The guardrails that help a connected school system stay helpful for everyone.',
-      sections: [
-        ['School responsibility', 'The school decides its roles, permissions, retention choices and the people responsible for decisions.'],
-        ['AI responsibility', 'Soma can summarize, draft and find patterns. It assists understanding; school staff remain responsible for decisions and actions.'],
-        ['Sensitive records', 'Discipline and other sensitive records should only be added and viewed by authorized people, with care for the learner’s dignity.'],
-        ['Fair access', 'Do not try to bypass permissions, interfere with another school’s information or use Bidii to harm a person.'],
-      ],
-    },
-  }[kind];
-
-  return (
-    <div className="modal-backdrop" role="presentation" onClick={close}>
-      <div className="modal" role="dialog" aria-modal="true" aria-labelledby="legal-title" onClick={(event) => event.stopPropagation()}>
-        <button className="modal-close" onClick={close} aria-label="Close legal content" data-testid="button-close-legal"><X size={17} /></button>
-        <div className="eyebrow">Bidii · {kind}</div>
-        <h2 id="legal-title">{content.title}</h2>
-        <p>{content.intro}</p>
-        {content.sections.map(([heading, text]) => (
-          <div key={heading}>
-            <h3 style={{ fontFamily: 'var(--app-font-serif)', margin: '22px 0 4px' }}>{heading}</h3>
-            <p style={{ marginTop: 0 }}>{text}</p>
-          </div>
-        ))}
-        <button className="button-primary" onClick={close} data-testid="button-close-legal-bottom">Close</button>
-      </div>
-    </div>
-  );
-}
-
 function DemoModal({ close }: { close: () => void }) {
   const [sent, setSent] = useState(false);
   const submit = (event: FormEvent<HTMLFormElement>) => {
