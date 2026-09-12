@@ -136,7 +136,7 @@ function ScreenshotPlaceholder({ label, title, detail, dark = false }: { label: 
 function Brand() {
   return (
     <a className="brand" href="#top" data-testid="link-brand">
-      <span className="brand-mark brand-logo-wrap"><img className="brand-logo" src={bidiiLogo} alt="BidiiKE school management logo" width="100" height="100" /></span>
+      <span className="brand-mark brand-logo-wrap"><img className="brand-logo" src={bidiiLogo} alt="Bidii Schools" width="100" height="100" /></span>
       <span>bidii</span>
     </a>
   );
@@ -398,7 +398,7 @@ function App() {
               <div className="hero-grid">
                 <Reveal>
                   <div className="eyebrow">Kenya’s AI-powered school management system</div>
-                  <h1 id="hero-title">School management, <em>made simple.</em></h1>
+                  <h1 id="hero-title"><span className="brand-name">Bidii Schools</span> — school management, <em>made simple.</em></h1>
                   <p className="hero-copy">Bidii brings people, learning, money and the everyday school day together in one school management system — so leaders can see clearly and teachers have more time for learners.</p>
                   <div className="hero-actions">
                     <button className="button-primary" onClick={() => setModal('demo')} data-testid="button-hero-demo">Book a demo <ArrowRight size={17} /></button>

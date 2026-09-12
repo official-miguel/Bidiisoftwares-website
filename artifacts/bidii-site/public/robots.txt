@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
-Sitemap: https://bidii-learning-hub--ruthlewis10423.replit.app/sitemap.xml
+
+# Keep authenticated app routes and API endpoints out of the index
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /login
+Disallow: /register
+Disallow: /admin/
+
+Sitemap: https://www.bidiischools.co.ke/sitemap.xml

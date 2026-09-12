@@ -1,0 +1,70 @@
+name: SEO Audit
+
+# Run after every deploy of the marketing site to production.
+# The Vercel deployment webhook triggers this via the `deployment_status`
+# event once Vercel marks the deployment as "success".
+#
+# Also runnable on demand from the Actions tab.
+on:
+  deployment_status:
+  workflow_dispatch:
+
+jobs:
+  seo-audit:
+    # Only run when the deployment that just finished is to the production
+    # environment (i.e. bidiischools.co.ke), not preview branches.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       (github.event.deployment.environment == 'Production' ||
+        github.event.deployment.environment == 'production'))
+
+    name: SEO acceptance checklist
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      # Install Lighthouse CLI so the SEO score check works
+      - name: Install Lighthouse CLI
+        run: npm install -g lighthouse@12
+
+      # Install Chromium (needed by Lighthouse --headless)
+      - name: Install Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y chromium-browser
+
+      - name: Set Chrome path for Lighthouse
+        run: echo "CHROME_PATH=$(which chromium-browser)" >> "$GITHUB_ENV"
+
+      - name: Run SEO audit against live site
+        run: pnpm seo-audit
+        env:
+          # Print detail lines for every check, not just failures
+          SEO_AUDIT_VERBOSE: '1'
+
+      # Upload the audit output as an artifact so it's visible in the
+      # Actions summary even when the job passes.
+      - name: Summarise results
+        if: always()
+        run: |
+          echo "### SEO Audit Results" >> "$GITHUB_STEP_SUMMARY"
+          echo "Target: https://bidiischools.co.ke" >> "$GITHUB_STEP_SUMMARY"
+          echo "See the job log above for the full pass/fail checklist." >> "$GITHUB_STEP_SUMMARY"
