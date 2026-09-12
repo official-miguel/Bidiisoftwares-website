@@ -266,7 +266,10 @@ function App() {
         <header className="nav-wrap">
           <div className="container">
             <nav className="nav" aria-label="Main navigation">
-              <Brand />
+              <div className="nav-brand-group">
+                <Brand />
+                <a className="nav-login nav-login-mobile" href="https://app.bidiischools.co.ke" target="_blank" rel="noopener noreferrer" aria-label="Log in"><LockKeyhole size={12} strokeWidth={2} />Log in</a>
+              </div>
               <div className={`nav-links ${mobileOpen ? 'open' : ''}`}>
                 <a href="#product" onClick={() => setMobileOpen(false)} data-testid="link-product">Product</a>
                 <a href="#how" onClick={() => setMobileOpen(false)} data-testid="link-how-it-works">How it works</a>
@@ -275,7 +278,6 @@ function App() {
                 <a className="nav-login nav-login-desktop" href="https://app.bidiischools.co.ke" target="_blank" rel="noopener noreferrer" data-testid="link-nav-login"><LockKeyhole size={14} strokeWidth={2} />Log in</a>
                 <button className="nav-demo" onClick={() => { setMobileOpen(false); setModal('demo'); }} data-testid="button-nav-demo">Book a demo</button>
               </div>
-              <a className="nav-login nav-login-mobile" href="https://app.bidiischools.co.ke" target="_blank" rel="noopener noreferrer" aria-label="Log in"><LockKeyhole size={14} strokeWidth={2} />Log in</a>
               <button className="menu-button" onClick={() => setMobileOpen((open) => !open)} aria-label={mobileOpen ? 'Close menu' : 'Open menu'} aria-expanded={mobileOpen} data-testid="button-mobile-menu">
                 {mobileOpen ? <X size={21} /> : <Menu size={21} />}
               </button>
