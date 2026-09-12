@@ -16,6 +16,7 @@
     "nodemailer": "^6.10.1"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "@types/nodemailer": "^6.4.17",
     "prettier": "^3.9.6",
     "typescript": "~5.9.3"
