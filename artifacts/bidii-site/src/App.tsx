@@ -233,6 +233,8 @@ function LegalModal({ kind, close }: { kind: Exclude<ModalKind, 'demo' | null>; 
       </div>
     </div>
   );
+}
+
 function DemoModal({ close }: { close: () => void }) {
   const [sent, setSent] = useState(false);
   const submit = (event: FormEvent<HTMLFormElement>) => {
