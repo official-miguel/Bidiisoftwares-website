@@ -58,6 +58,15 @@ export default defineConfig(async () => ({
     fs: {
       strict: true,
     },
+    proxy: {
+      // Forward /api/* to the API server running on a separate port in dev.
+      // Set VITE_API_PORT (or API_PORT) in your local .env to match the
+      // PORT set in artifacts/api-server/.env (default: 4000).
+      '/api': {
+        target: `http://localhost:${process.env.VITE_API_PORT ?? process.env.API_PORT ?? 4000}`,
+        changeOrigin: true,
+      },
+    },
   },
   preview: {
     port,

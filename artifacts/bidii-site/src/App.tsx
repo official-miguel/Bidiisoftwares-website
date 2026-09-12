@@ -236,12 +236,42 @@ function LegalModal({ kind, close }: { kind: Exclude<ModalKind, 'demo' | null>; 
 }
 
 function DemoModal({ close }: { close: () => void }) {
-  const [sent, setSent] = useState(false);
-  const submit = (event: FormEvent<HTMLFormElement>) => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
+
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSent(true);
-    window.location.href = 'mailto:bidiisoftwares.1.ke@gmail.com?subject=Book%20a%20Bidii%20demo';
+    setStatus('sending');
+    setErrorMsg('');
+
+    const form = event.currentTarget;
+    const body = {
+      school: (form.elements.namedItem('school') as HTMLInputElement).value,
+      name:   (form.elements.namedItem('name')   as HTMLInputElement).value,
+      email:  (form.elements.namedItem('email')  as HTMLInputElement).value,
+      note:   (form.elements.namedItem('note')   as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch('/api/contact/demo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      if (res.ok) {
+        setStatus('sent');
+      } else {
+        const data = await res.json().catch(() => ({}));
+        setErrorMsg((data as { message?: string }).message ?? 'Something went wrong. Please try again.');
+        setStatus('error');
+      }
+    } catch {
+      setErrorMsg('Could not reach the server. Please check your connection and try again.');
+      setStatus('error');
+    }
   };
+
   return (
     <div className="modal-backdrop" role="presentation" onClick={close}>
       <div className="modal" role="dialog" aria-modal="true" aria-labelledby="demo-title" onClick={(event) => event.stopPropagation()}>
@@ -249,22 +279,29 @@ function DemoModal({ close }: { close: () => void }) {
         <div className="eyebrow">A calm first step</div>
         <h2 id="demo-title">Let’s look at your school together.</h2>
         <p>Tell us a little about your school. We’ll reply with a practical walkthrough, not a hard sell.</p>
-        {sent ? (
-          <div className="success-box" data-testid="status-demo-sent">Your email app should open now. If it doesn’t, write to bidiisoftwares.1.ke@gmail.com.</div>
+        {status === 'sent' ? (
+          <div className="success-box" data-testid="status-demo-sent">
+            We’ve received your request and will be in touch shortly. You can also reach us at{' '}
+            <a href="mailto:bidiisoftwares.1.ke@gmail.com">bidiisoftwares.1.ke@gmail.com</a>.
+          </div>
         ) : (
           <form className="demo-form" onSubmit={submit}>
             <label>School name<input required name="school" placeholder="e.g. Mwangaza Academy" data-testid="input-school-name" /></label>
             <label>Your name<input required name="name" placeholder="e.g. Wanjiku Njoroge" data-testid="input-contact-name" /></label>
             <label>Work email<input required type="email" name="email" placeholder="you@school.ac.ke" data-testid="input-contact-email" /></label>
             <label>What would you like to understand?<textarea name="note" placeholder="Academics, fees, boarding..." data-testid="input-demo-note" /></label>
-            <button className="button-primary" type="submit" data-testid="button-submit-demo">Book my demo <ArrowRight size={16} /></button>
+            {status === 'error' && (
+              <div className="error-box" role="alert" data-testid="status-demo-error">{errorMsg}</div>
+            )}
+            <button className="button-primary" type="submit" disabled={status === 'sending'} data-testid="button-submit-demo">
+              {status === 'sending' ? 'Sending…' : <><span>Book my demo</span> <ArrowRight size={16} /></>}
+            </button>
           </form>
         )}
       </div>
     </div>
   );
 }
-
 function App() {
   const [loading, setLoading] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
