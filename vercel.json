@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/bidii-site run build",
-  "installCommand": "pnpm install --no-frozen-lockfile",
+  "installCommand": "pnpm install --no-frozen-lockfile --ignore-scripts",
   "outputDirectory": "artifacts/bidii-site/dist/public",
   "framework": null,
   "rewrites": [

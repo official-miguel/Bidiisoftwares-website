@@ -10,9 +10,12 @@
   },
   "private": true,
   "dependencies": {
-    "@replit/connectors-sdk": "^0.4.1"
+    "@replit/connectors-sdk": "^0.4.1",
+    "@vercel/node": "^5.1.1",
+    "nodemailer": "^6.10.1"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
     "prettier": "^3.9.6",
     "typescript": "~5.9.3"
   }
