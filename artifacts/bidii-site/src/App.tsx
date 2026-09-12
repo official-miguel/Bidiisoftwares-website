@@ -350,7 +350,7 @@ function App() {
               <Reveal><div className="connected-intro"><div><div className="section-label eyebrow">The connected school</div><h2 className="section-title">The complete school management system for Kenya.</h2></div><p className="section-copy">Instead of moving information between systems, keep the people and the records close together. Every view is shaped by the work someone is responsible for.</p></div></Reveal>
               <Reveal delay={.12}><div className="connected-map">
                 {[
-                  [Users, 'People', 'Students, staff & parents'], [GraduationCap, 'Academics', 'CBC, CBE & 8-4-4'], [ClipboardCheck, 'Attendance', 'Today and over time'], [CreditCard, 'Finance', 'Fees & collection'], [PanelTop, 'Boarding', 'Beds, movement & care'], [Library, 'Library', 'Borrowing & demand'], [HeartHandshake, 'Development', 'Discipline & achievements'], [MessageSquare, 'Communication', 'The right message'],
+                  [Users, 'People', 'Students, staff & parents'], [GraduationCap, 'Academics', 'CBC, CBE & 8-4-4'], [ClipboardCheck, 'Attendance', 'Today and over time'], [CreditCard, 'Finance', 'Fees & collection'], [PanelTop, 'Boarding', 'Beds, movement & care'], [BookOpen, 'Diary', 'Assignments & submissions'], [Library, 'Library', 'Borrowing & demand'], [HeartHandshake, 'Development', 'Discipline & achievements'], [MessageSquare, 'Communication', 'The right message'],
                 ].map(([Icon, title, detail], index) => {
                   const NodeIcon = Icon as LucideIcon;
                   return <div className="map-node" key={title as string} data-testid={`node-module-${index}`}><NodeIcon className="node-icon" size={22} /><strong>{title as string}</strong><small>{detail as string}</small></div>;
