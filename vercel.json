@@ -3,11 +3,6 @@
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "artifacts/bidii-site/dist/public",
   "framework": null,
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "@vercel/node@5"
-    }
-  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
