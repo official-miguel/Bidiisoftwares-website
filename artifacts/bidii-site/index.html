@@ -15,8 +15,8 @@
     <meta property="og:site_name" content="Bidii Schools" />
     <meta property="og:locale" content="en_KE" />
     <meta property="og:image" content="https://www.bidiischools.co.ke/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1733" />
+    <meta property="og:image:height" content="907" />
     <meta property="og:image:alt" content="Bidii Schools — School management made simple" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Bidii Schools — AI-Powered School Management System for Kenya" />
@@ -33,7 +33,18 @@
             "name": "Bidii Schools",
             "alternateName": "Bidii",
             "url": "https://www.bidiischools.co.ke",
-            "logo": "https://www.bidiischools.co.ke/logo.png",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://www.bidiischools.co.ke/#logo",
+              "url": "https://www.bidiischools.co.ke/logo.png",
+              "contentUrl": "https://www.bidiischools.co.ke/logo.png",
+              "width": 1254,
+              "height": 1254,
+              "caption": "Bidii Schools"
+            },
+            "image": {
+              "@id": "https://www.bidiischools.co.ke/#logo"
+            },
             "email": "bidiisoftwares.1.ke@gmail.com",
             "telephone": "0182319029",
             "areaServed": "KE",
@@ -49,7 +60,67 @@
             "url": "https://www.bidiischools.co.ke",
             "name": "Bidii Schools",
             "publisher": { "@id": "https://www.bidiischools.co.ke/#organization" },
-            "inLanguage": "en-KE"
+            "inLanguage": "en-KE",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.bidiischools.co.ke/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bidiischools.co.ke/#homepage",
+            "url": "https://www.bidiischools.co.ke",
+            "name": "Bidii Schools — AI-Powered School Management System for Kenya",
+            "description": "Bidii Schools is an AI-powered school management system built for Kenyan schools.",
+            "isPartOf": { "@id": "https://www.bidiischools.co.ke/#website" },
+            "about": { "@id": "https://www.bidiischools.co.ke/#organization" },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.bidiischools.co.ke"
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://app.bidiischools.co.ke/#login",
+            "url": "https://app.bidiischools.co.ke",
+            "name": "Log in — Bidii Schools",
+            "description": "Log in to the Bidii Schools school management system.",
+            "isPartOf": { "@id": "https://www.bidiischools.co.ke/#website" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bidiischools.co.ke/#pricing",
+            "url": "https://www.bidiischools.co.ke/#pricing",
+            "name": "Pricing — Bidii Schools",
+            "description": "Bidii Schools pricing starts from KES 180 per learner per term. First term free, no card required.",
+            "isPartOf": { "@id": "https://www.bidiischools.co.ke/#website" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bidiischools.co.ke/#product",
+            "url": "https://www.bidiischools.co.ke/#product",
+            "name": "Features — Bidii Schools",
+            "description": "Explore all Bidii Schools features: CBC academics, attendance, finance, boarding, library, communication, and Soma AI.",
+            "isPartOf": { "@id": "https://www.bidiischools.co.ke/#website" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bidiischools.co.ke/#faq-page",
+            "url": "https://www.bidiischools.co.ke/#faq",
+            "name": "FAQ — Bidii Schools",
+            "description": "Frequently asked questions about Bidii Schools school management system.",
+            "isPartOf": { "@id": "https://www.bidiischools.co.ke/#website" }
           },
           {
             "@type": "SoftwareApplication",
