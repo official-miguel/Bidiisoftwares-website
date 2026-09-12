@@ -1,7 +1,6 @@
 ﻿import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from 'react';
 import { motion, useInView } from 'framer-motion';
 import type { LucideIcon } from 'lucide-react';
-import financeScreenshot from '@assets/Screenshot_(106)_1787081748997.png';
 import bidiiLogo from '@assets/logo_1787082290625.png';
 import {
   ArrowDownRight,
@@ -48,7 +47,7 @@ const features: Array<{
   image?: string;
 }> = [
   { title: 'Attendance', copy: 'Mark the class in seconds. See patterns before they become a problem.', icon: ClipboardCheck, tone: 'tall', screen: 'Attendance intelligence', detail: 'Who is away, and how often?' },
-  { title: 'Finance', copy: 'Know what is paid, what is waiting, and what needs a kind follow-up.', icon: WalletCards, tone: 'gold-card', screen: 'Terms & billing', detail: 'A real Bidii screen · add more finance views here', image: financeScreenshot },
+  { title: 'Finance', copy: 'Know what is paid, what is waiting, and what needs a kind follow-up.', icon: WalletCards, tone: 'gold-card', screen: 'Terms & billing', detail: 'KES 84,600 collected this term' },
   { title: 'Boarding', copy: 'Every dorm, bed, transfer and inspection in one calm view.', icon: PanelTop, tone: 'dark-card', screen: 'Boarding map', detail: '438 of 460 beds allocated' },
   { title: 'Diary', copy: 'Send assignments to the right learners. Track who submitted, who needs a nudge, and keep the learning conversation flowing.', icon: BookOpen, tone: 'gold-card', screen: 'Assignment tracker', detail: '24 of 28 students submitted on time' },
   { title: 'Library', copy: 'Scan, lend, return, and learn what your students actually read.', icon: Library, tone: '', screen: 'Circulation desk', detail: '18 books due today' },
@@ -85,18 +84,41 @@ function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; 
   );
 }
 
-function ScreenshotPlaceholder({ label, title, detail, dark = false, image }: { label: string; title: string; detail: string; dark?: boolean; image?: string }) {
+function FinanceMock({ detail }: { detail: string }) {
+  const rows = [
+    { name: 'Form 1 North', paid: 92, amount: 'KES 28,440' },
+    { name: 'Form 2 South', paid: 78, amount: 'KES 22,620' },
+    { name: 'Form 3 East', paid: 55, amount: 'KES 18,700' },
+  ];
+  return (
+    <div className="module-shot-content finance-mock">
+      <div className="shot-mini-label">Finance</div>
+      <strong>Terms &amp; billing</strong>
+      <div className="finance-rows">
+        {rows.map(row => (
+          <div className="finance-row" key={row.name}>
+            <span className="finance-row-name">{row.name}</span>
+            <div className="finance-bar-wrap">
+              <div className="finance-bar" style={{ width: row.paid + '%' }} />
+            </div>
+            <span className="finance-row-amount">{row.amount}</span>
+          </div>
+        ))}
+      </div>
+      <small>{detail}</small>
+    </div>
+  );
+}
+
+function ScreenshotPlaceholder({ label, title, detail, dark = false }: { label: string; title: string; detail: string; dark?: boolean }) {
   return (
     <div className={`module-shot ${dark ? 'module-shot-dark' : ''}`} data-testid={`screenshot-placeholder-${label.toLowerCase().replaceAll(' ', '-')}`}>
       <div className="module-shot-bar">
         <span className="mono">Product view · screenshot space</span>
         <span className="shot-dots"><i /><i /><i /></span>
       </div>
-      {image ? (
-        <div className="module-shot-image-wrap">
-          <img className="module-shot-image" src={image} alt={`${label} Bidii school management product screen`} width="640" height="360" loading="lazy" />
-          <div className="module-shot-caption">{detail}</div>
-        </div>
+      {label === 'Finance' ? (
+        <FinanceMock detail={detail} />
       ) : (
         <div className="module-shot-content">
           <div className="shot-mini-label">{label}</div>
