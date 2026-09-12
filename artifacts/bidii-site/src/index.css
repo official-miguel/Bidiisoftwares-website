@@ -4,6 +4,7 @@
 @plugin "@tailwindcss/typography";
 
 :root {
+  color-scheme: light;
   --background: 42 45% 95%;
   --foreground: 222 35% 17%;
   --card: 40 42% 98%;
