@@ -1,4 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
-  <rect width="180" height="180" rx="32" fill="#ffffff"/>
-  <image href="/favicon.png?v=2" x="10" y="10" width="160" height="160" preserveAspectRatio="xMidYMid meet"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- White background -->
+  <rect width="512" height="512" rx="80" fill="#ffffff"/>
+
+  <!-- Open book base -->
+  <g transform="translate(256, 320)">
+    <!-- Left page -->
+    <path d="M-170,-60 Q-85,-90 0,-55 L0,80 Q-85,45 -170,70 Z" fill="#1a2d6e" opacity="0.85"/>
+    <!-- Right page -->
+    <path d="M170,-60 Q85,-90 0,-55 L0,80 Q85,45 170,70 Z" fill="#1a2d6e" opacity="0.85"/>
+    <!-- Book spine shadow -->
+    <rect x="-4" y="-60" width="8" height="140" rx="3" fill="#0f1f52"/>
+  </g>
+
+  <!-- Large B letterform -->
+  <g transform="translate(120, 60)">
+    <!-- B spine -->
+    <rect x="0" y="0" width="38" height="240" rx="8" fill="#1a2d6e"/>
+    <!-- Top bump of B -->
+    <path d="M38,0 Q160,0 160,60 Q160,120 38,120 Z" fill="#1a2d6e"/>
+    <path d="M52,18 Q138,18 138,60 Q138,102 52,102 Z" fill="#ffffff"/>
+    <!-- Bottom bump of B -->
+    <path d="M38,120 Q175,120 175,190 Q175,240 38,240 Z" fill="#1a2d6e"/>
+    <path d="M52,138 Q150,138 150,190 Q150,222 52,222 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Pixel scatter (digital effect) on top-left of B -->
+  <g fill="#1a2d6e">
+    <rect x="88" y="55" width="14" height="14" rx="2"/>
+    <rect x="68" y="72" width="10" height="10" rx="2"/>
+    <rect x="75" y="90" width="8" height="8" rx="2"/>
+    <rect x="58" y="58" width="7" height="7" rx="2"/>
+    <rect x="48" y="78" width="6" height="6" rx="2"/>
+    <rect x="40" y="62" width="5" height="5" rx="2"/>
+  </g>
+
+  <!-- Circuit dots on book -->
+  <g fill="none" stroke="#ffffff" stroke-width="5">
+    <circle cx="256" cy="255" r="10" fill="#ffffff" stroke="none"/>
+    <line x1="256" y1="265" x2="256" y2="300"/>
+    <circle cx="220" cy="300" r="8" fill="#ffffff" stroke="none"/>
+    <circle cx="292" cy="300" r="8" fill="#ffffff" stroke="none"/>
+    <line x1="220" y1="300" x2="292" y2="300"/>
+  </g>
 </svg>
