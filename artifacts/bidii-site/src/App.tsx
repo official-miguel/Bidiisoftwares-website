@@ -397,9 +397,9 @@ function App() {
             <div className="container">
               <div className="hero-grid">
                 <Reveal>
-                  <div className="eyebrow">Kenya’s AI-powered school management system</div>
+                  <div className="eyebrow">Bidii Schools — Kenya’s AI-powered school management system</div>
                   <h1 id="hero-title"><span className="brand-name">Bidii Schools</span> — school management, <em>made simple.</em></h1>
-                  <p className="hero-copy">Bidii brings people, learning, money and the everyday school day together in one school management system — so leaders can see clearly and teachers have more time for learners.</p>
+                  <p className="hero-copy">Bidii Schools brings people, learning, money and the everyday school day together in one school management system — so leaders can see clearly and teachers have more time for learners.</p>
                   <div className="hero-actions">
                     <button className="button-primary" onClick={() => setModal('demo')} data-testid="button-hero-demo">Book a demo <ArrowRight size={17} /></button>
                     <button className="button-secondary" onClick={() => navigate('product')} data-testid="button-hero-action">See Bidii in action <ArrowDownRight size={17} /></button>
@@ -438,14 +438,14 @@ function App() {
             <div className="container">
               <div className="intro-grid">
                 <Reveal><div className="section-label eyebrow">A smarter school day</div><div className="book-ribbon"><div><b>For the principal</b><span>See what needs your attention today.</span></div><div><b>For the teacher</b><span>Less administration. More time for learners.</span></div><div><b>For the parent</b><span>Stay close to the school’s chosen updates.</span></div></div></Reveal>
-                <Reveal delay={.1}><h2>School life is a lot of pages. <em>Bidii helps you read the story.</em></h2><p className="section-copy">A learner is more than a mark, an absence or a fee balance. Bidii connects the information around that journey, so authorized staff can understand the bigger picture.</p></Reveal>
+                <Reveal delay={.1}><h2>School life is a lot of pages. <em>Bidii Schools helps you read the story.</em></h2><p className="section-copy">A learner is more than a mark, an absence or a fee balance. Bidii Schools connects the information around that journey, so authorized staff can understand the bigger picture.</p></Reveal>
               </div>
             </div>
           </section>
 
           <section className="section how" id="how">
             <div className="container">
-              <Reveal><div className="how-head"><div><div className="section-label eyebrow">How it works</div><h2 className="section-title">Three simple moves.</h2></div><p className="section-copy">No treasure hunt through folders. Bidii turns school information into a clear next step.</p></div></Reveal>
+              <Reveal><div className="how-head"><div><div className="section-label eyebrow">How it works</div><h2 className="section-title">Three simple moves.</h2></div><p className="section-copy">No treasure hunt through folders. Bidii Schools turns school information into a clear next step.</p></div></Reveal>
               <div className="steps">
                 {[
                   ['01', 'Bring it together', 'Students, classes, learning, fees, attendance and records live in one connected school space.'],
@@ -543,7 +543,7 @@ function App() {
 
           <section className="section final-cta" id="demo">
             <div className="container">
-              <Reveal><div className="section-label eyebrow">Ready for a better way to run your school?</div><h2 className="section-title">Give your school a system that can keep up.</h2><p className="section-copy">Manage your school. Understand your learners. Let AI do the heavy work.</p><button className="button-primary" onClick={() => setModal('demo')} data-testid="button-final-demo">Book a Bidii demo <ArrowRight size={17} /></button></Reveal>
+              <Reveal><div className="section-label eyebrow">Ready for a better way to run your school?</div><h2 className="section-title">Give Bidii Schools a term — free, no card required.</h2><p className="section-copy">Manage your school. Understand your learners. Let Bidii Schools do the heavy work.</p><button className="button-primary" onClick={() => setModal('demo')} data-testid="button-final-demo">Book a Bidii demo <ArrowRight size={17} /></button></Reveal>
             </div>
           </section>
         </main>
@@ -551,11 +551,11 @@ function App() {
         <footer className="footer">
           <div className="container">
             <div className="footer-grid">
-              <div><Brand /><p className="footer-copy">The AI-powered operating system for the modern Kenyan school.<br /><br />Built for schools. Built for the CBC era. Built for better decisions.</p><button onClick={() => setModal('demo')} data-testid="button-footer-demo">Book a demo <ArrowRight size={14} /></button><a className="trillionaire-credit" href={TRILLIONAIRE_DESIGNS_URL} target="_blank" rel="noopener noreferrer" data-testid="link-trillionaire-designs">Powered by Trillionaire Designs</a></div>
+              <div><Brand /><p className="footer-copy">Bidii Schools is the AI-powered school management system for the modern Kenyan school.<br /><br />Built for CBC, built for better decisions, built for every school day.</p><button onClick={() => setModal('demo')} data-testid="button-footer-demo">Book a demo <ArrowRight size={14} /></button><a className="trillionaire-credit" href={TRILLIONAIRE_DESIGNS_URL} target="_blank" rel="noopener noreferrer" data-testid="link-trillionaire-designs">Powered by Trillionaire Designs</a></div>
               <div><h4>Explore</h4><a href="#product" data-testid="link-footer-product">Product</a><a href="#academics" data-testid="link-footer-academics">CBC intelligence</a><a href="#ai" data-testid="link-footer-ai">Soma AI</a><a href="#pricing" data-testid="link-footer-pricing">Pricing</a><a href="#compatibility" data-testid="link-footer-compatibility">Compatibility</a></div>
               <div><h4>Good to know</h4><button onClick={() => setModal('terms')} data-testid="button-footer-terms">Terms of service</button><button onClick={() => setModal('privacy')} data-testid="button-footer-privacy">Privacy policy</button><button onClick={() => setModal('conditions')} data-testid="button-footer-conditions">Conditions & acceptable use</button><a href="mailto:bidiisoftwares.1.ke@gmail.com" data-testid="link-footer-email"><Mail size={13} style={{ verticalAlign: 'middle', marginRight: 6 }} />bidiisoftwares.1.ke@gmail.com</a><a href="tel:0182319029" data-testid="link-footer-phone"><Phone size={13} style={{ verticalAlign: 'middle', marginRight: 6 }} />0182319029</a></div>
             </div>
-            <div className="footer-bottom"><span>© 2025 Bidii. Made with effort in Kenya.</span><span className="mono">Manage · Understand · Persevere</span></div>
+            <div className="footer-bottom"><span>© 2025 Bidii Schools. Made with effort in Kenya.</span><span className="mono">Manage · Understand · Persevere</span></div>
           </div>
         </footer>
       </div>
