@@ -337,6 +337,15 @@ function App() {
     return () => window.clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Allows direct/shareable links to a legal document, e.g. for app store
+    // listings: https://bidiischools.co.ke/?legal=privacy
+    const legal = new URLSearchParams(window.location.search).get('legal');
+    if (legal === 'privacy' || legal === 'terms' || legal === 'conditions') {
+      setModal(legal);
+    }
+  }, []);
+
   const termTotal = useMemo(() => {
     const first = Math.min(enrollment, 300) * 180;
     const second = Math.max(Math.min(enrollment - 300, 500), 0) * 150;
