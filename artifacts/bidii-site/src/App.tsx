@@ -601,6 +601,7 @@ function App() {
       {modal === 'terms' && <LegalModal kind="terms" close={() => setModal(null)} />}
       {modal === 'privacy' && <LegalModal kind="privacy" close={() => setModal(null)} />}
       {modal === 'conditions' && <LegalModal kind="conditions" close={() => setModal(null)} />}
+      {modal === 'delete-account' && <LegalModal kind="delete-account" close={() => setModal(null)} />}
     </>
   );
 }
