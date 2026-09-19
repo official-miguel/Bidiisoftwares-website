@@ -34,7 +34,7 @@ import {
 // Update this single value when the Trillionaire Designs website URL is confirmed.
 const TRILLIONAIRE_DESIGNS_URL = 'https://trillionairedesigns.com';
 
-type ModalKind = 'demo' | 'terms' | 'privacy' | 'conditions' | null;
+type ModalKind = 'demo' | 'terms' | 'privacy' | 'conditions' | 'delete-account' | null;
 type Cadence = 'monthly' | 'termly' | 'annual';
 
 const features: Array<{
@@ -227,6 +227,35 @@ function LegalModal({ kind, close }: { kind: Exclude<ModalKind, 'demo' | null>; 
         { heading: '11. Contact', body: 'Trillionaire Designs Ltd. · Email: bidiisoftwares.1.ke@gmail.com · Phone: 0182319029 · Website: bidiischools.co.ke' },
       ],
     },
+    'delete-account': {
+      title: 'Delete Your Account',
+      subtitle: 'Bidii School Management System — Trillionaire Designs Ltd.',
+      effectiveDate: 'Effective Date: 9 September 2026',
+      intro: 'Bidii accounts (for principals, teachers, staff and parents) are created and managed by your school\'s administrator, not self-registered. To request deletion of your account and associated personal data, follow the steps below.',
+      sections: [
+        {
+          heading: 'How to request deletion',
+          items: [
+            'Email bidiisoftwares.1.ke@gmail.com from the address or phone number registered on your Bidii account, with the subject line "Account Deletion Request".',
+            'Include your full name, your school\'s name, and your role (Parent, Teacher, Staff, or Principal).',
+            'Alternatively, ask your school\'s administrator to submit the request on your behalf — school administrators can also request bulk deletion for their institution.',
+            'We will confirm your identity and process the request within 30 days.',
+          ],
+        },
+        {
+          heading: 'What gets deleted',
+          body: 'Once verified, we permanently delete or anonymise your personal data (name, contact details, login credentials) from the Bidii platform.',
+        },
+        {
+          heading: 'What may be retained',
+          items: [
+            'Academic, attendance, and financial records the School is legally required to retain as the Data Controller under the Data Protection Act, 2019 of Kenya.',
+            'Records relating to an open Personal Data Breach investigation, retained for a minimum of five (5) years.',
+          ],
+        },
+        { heading: 'Contact', body: 'Trillionaire Designs Ltd. · bidiisoftwares.1.ke@gmail.com · Phone: 0182319029 · See our full Privacy Policy for details on data retention and your rights.' },
+      ],
+    },
   } as Record<string, LegalDoc>)[kind];
 
   return (
@@ -341,7 +370,7 @@ function App() {
     // Allows direct/shareable links to a legal document, e.g. for app store
     // listings: https://bidiischools.co.ke/?legal=privacy
     const legal = new URLSearchParams(window.location.search).get('legal');
-    if (legal === 'privacy' || legal === 'terms' || legal === 'conditions') {
+    if (legal === 'privacy' || legal === 'terms' || legal === 'conditions' || legal === 'delete-account') {
       setModal(legal);
     }
   }, []);
