@@ -420,7 +420,6 @@ function App() {
               <div className="nav-brand-group">
                 <Brand />
                 <a className="nav-login nav-login-mobile" href={APP_URL} target="_blank" rel="noopener noreferrer" aria-label="Log in"><LockKeyhole size={12} strokeWidth={2} />Log in</a>
-                <a className="nav-app-mobile" href={APP_INSTALL_URL} aria-label="Get the app" data-testid="link-nav-get-app-mobile"><Download size={12} strokeWidth={2.2} />Get app</a>
               </div>
               <div className={`nav-links ${mobileOpen ? 'open' : ''}`}>
                 <a href="#product" onClick={() => setMobileOpen(false)} data-testid="link-product">Product</a>

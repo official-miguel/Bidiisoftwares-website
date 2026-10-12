@@ -636,13 +636,3 @@ body { background: var(--bidii-surface); color: var(--bidii-ink); }
 /* .devices is 130% wide (then scaled down) on phones; without a 0 minimum the
    column grows to fit it and clips the section's text and the app CTA. */
 @media (max-width: 900px) { .compat-grid { grid-template-columns: minmax(0, 1fr); } }
-/* Phones: the nav links collapse into the menu, so keep "Get app" in the top bar beside "Log in". */
-.nav-app-mobile { display: none; }
-@media (max-width: 680px) {
-  .nav-app-mobile { display: inline-flex; align-items: center; gap: 4px; padding: 7px 11px; border-radius: 999px; background: var(--bidii-sky); color: var(--bidii-blue); font-size: .72rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
-  .nav-app-mobile:hover { background: var(--bidii-sky-hover); }
-}
-@media (max-width: 360px) {
-  .nav-brand-group { gap: 6px; }
-  .nav-login-mobile, .nav-app-mobile { padding: 6px 8px; white-space: nowrap; }
-}
