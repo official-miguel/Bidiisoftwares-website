@@ -259,9 +259,8 @@ button { cursor: pointer; }
   --bidii-line: #e4ecee;
   --bidii-warning: #e6b45b;
   --bidii-blue: #04316a;      /* the navy of the Bidii logo */
-  --bidii-sky: #38bdf8;
-  --bidii-sky-hover: #7dd3fc;
-  --bidii-sky-text: #0369a1;  /* sky blue dark enough to read on white */
+  --bidii-app-blue-top: #1e8fd8;    /* glossy download-button blue, light at the top */
+  --bidii-app-blue-bottom: #0a56a3; /* ...deeper at the bottom */
 }
 
 body { background: var(--bidii-surface); color: var(--bidii-ink); }
@@ -625,11 +624,41 @@ body { background: var(--bidii-surface); color: var(--bidii-ink); }
 
 /* "Get the app" — links to the Bidii app's /install page */
 .button-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
-/* Sky blue, so the download action stands apart from the teal demo CTAs.
-   Navy (logo) text: white on sky blue is too low-contrast to read. */
-.button-primary.button-app { background: var(--bidii-sky); color: var(--bidii-blue); }
-.button-primary.button-app:hover { background: var(--bidii-sky-hover); }
-.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-sky-text); font-weight: 600; }
+/* Glossy blue download button that stands apart from the teal demo CTAs,
+   with a pulse ring, a shine sweep and a bobbing arrow to draw the eye. */
+.button-primary.button-app {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(180deg, var(--bidii-app-blue-top), var(--bidii-app-blue-bottom));
+  box-shadow: 0 6px 16px rgba(10, 86, 163, .35);
+  animation: appPulse 2.4s ease-out infinite;
+}
+.button-primary.button-app:hover { background: linear-gradient(180deg, #2a9be4, #0b62b8); }
+.button-primary.button-app::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .45), transparent);
+  transform: skewX(-20deg);
+  animation: appShine 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+.button-app svg { animation: appArrow 1.6s ease-in-out infinite; }
+@keyframes appPulse {
+  0%   { box-shadow: 0 6px 16px rgba(10, 86, 163, .35), 0 0 0 0 rgba(30, 143, 216, .55); }
+  70%  { box-shadow: 0 6px 16px rgba(10, 86, 163, .35), 0 0 0 14px rgba(30, 143, 216, 0); }
+  100% { box-shadow: 0 6px 16px rgba(10, 86, 163, .35), 0 0 0 0 rgba(30, 143, 216, 0); }
+}
+@keyframes appShine { 0% { left: -60%; } 55%, 100% { left: 130%; } }
+@keyframes appArrow { 0%, 100% { transform: translateY(-1px); } 50% { transform: translateY(2px); } }
+@media (prefers-reduced-motion: reduce) {
+  .button-primary.button-app, .button-primary.button-app::after, .button-app svg { animation: none; }
+}
+.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-app-blue-bottom); font-weight: 600; }
 .nav-links .nav-app:hover { color: var(--bidii-blue); }
 .app-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 32px; }
 .app-cta small { max-width: 300px; color: #68707c; font-size: .78rem; line-height: 1.5; }
