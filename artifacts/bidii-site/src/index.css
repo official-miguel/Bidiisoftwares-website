@@ -258,6 +258,8 @@ button { cursor: pointer; }
   --bidii-soft: #eef5f4;
   --bidii-line: #e4ecee;
   --bidii-warning: #e6b45b;
+  --bidii-blue: #04316a;      /* the navy of the Bidii logo */
+  --bidii-blue-hover: #0b4590;
 }
 
 body { background: var(--bidii-surface); color: var(--bidii-ink); }
@@ -621,8 +623,11 @@ body { background: var(--bidii-surface); color: var(--bidii-ink); }
 
 /* "Get the app" — links to the Bidii app's /install page */
 .button-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
-.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-teal); font-weight: 600; }
-.nav-links .nav-app:hover { color: var(--bidii-teal-dark); }
+/* Logo navy, so the download action stands apart from the teal demo CTAs. */
+.button-primary.button-app { background: var(--bidii-blue); color: #fff; }
+.button-primary.button-app:hover { background: var(--bidii-blue-hover); }
+.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-blue); font-weight: 600; }
+.nav-links .nav-app:hover { color: var(--bidii-blue-hover); }
 .app-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 32px; }
 .app-cta small { max-width: 300px; color: #68707c; font-size: .78rem; line-height: 1.5; }
 /* .devices is 130% wide (then scaled down) on phones; without a 0 minimum the
