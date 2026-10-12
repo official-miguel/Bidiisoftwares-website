@@ -259,7 +259,9 @@ button { cursor: pointer; }
   --bidii-line: #e4ecee;
   --bidii-warning: #e6b45b;
   --bidii-blue: #04316a;      /* the navy of the Bidii logo */
-  --bidii-blue-hover: #0b4590;
+  --bidii-sky: #38bdf8;
+  --bidii-sky-hover: #7dd3fc;
+  --bidii-sky-text: #0369a1;  /* sky blue dark enough to read on white */
 }
 
 body { background: var(--bidii-surface); color: var(--bidii-ink); }
@@ -623,11 +625,12 @@ body { background: var(--bidii-surface); color: var(--bidii-ink); }
 
 /* "Get the app" — links to the Bidii app's /install page */
 .button-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
-/* Logo navy, so the download action stands apart from the teal demo CTAs. */
-.button-primary.button-app { background: var(--bidii-blue); color: #fff; }
-.button-primary.button-app:hover { background: var(--bidii-blue-hover); }
-.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-blue); font-weight: 600; }
-.nav-links .nav-app:hover { color: var(--bidii-blue-hover); }
+/* Sky blue, so the download action stands apart from the teal demo CTAs.
+   Navy (logo) text: white on sky blue is too low-contrast to read. */
+.button-primary.button-app { background: var(--bidii-sky); color: var(--bidii-blue); }
+.button-primary.button-app:hover { background: var(--bidii-sky-hover); }
+.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-sky-text); font-weight: 600; }
+.nav-links .nav-app:hover { color: var(--bidii-blue); }
 .app-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 32px; }
 .app-cta small { max-width: 300px; color: #68707c; font-size: .78rem; line-height: 1.5; }
 /* .devices is 130% wide (then scaled down) on phones; without a 0 minimum the
