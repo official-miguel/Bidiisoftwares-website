@@ -11,6 +11,7 @@ import {
   ClipboardCheck,
   Clock3,
   CreditCard,
+  Download,
   GraduationCap,
   HeartHandshake,
   Laptop,
@@ -34,6 +35,12 @@ import {
 // Update this single value when the Trillionaire Designs website URL is confirmed.
 const TRILLIONAIRE_DESIGNS_URL = 'https://trillionairedesigns.com';
 
+// The Bidii school app. It is a PWA, so it can only be installed from its own
+// domain: "Get the app" links send people to its /install page, which offers
+// the install button or the right steps for their phone or browser.
+const APP_URL = 'https://app.bidiischools.co.ke';
+const APP_INSTALL_URL = `${APP_URL}/install`;
+
 type ModalKind = 'demo' | 'terms' | 'privacy' | 'conditions' | 'delete-account' | null;
 type Cadence = 'monthly' | 'termly' | 'annual';
 
@@ -44,7 +51,6 @@ const features: Array<{
   tone: string;
   screen: string;
   detail: string;
-  image?: string;
 }> = [
   { title: 'Attendance', copy: 'Mark the class in seconds. See patterns before they become a problem.', icon: ClipboardCheck, tone: 'tall', screen: 'Attendance intelligence', detail: 'Who is away, and how often?' },
   { title: 'Finance', copy: 'Know what is paid, what is waiting, and what needs a kind follow-up.', icon: WalletCards, tone: 'gold-card', screen: 'Terms & billing', detail: 'KES 84,600 collected this term' },
@@ -151,7 +157,7 @@ function ProductCard({ item, index }: { item: typeof features[number]; index: nu
         <h3>{item.title}</h3>
         <p>{item.copy}</p>
       </div>
-      <ScreenshotPlaceholder label={item.title} title={item.screen} detail={item.detail} dark={item.tone === 'dark-card'} image={item.image} />
+      <ScreenshotPlaceholder label={item.title} title={item.screen} detail={item.detail} dark={item.tone === 'dark-card'} />
     </Reveal>
   );
 }
@@ -413,14 +419,15 @@ function App() {
             <nav className="nav" aria-label="Main navigation">
               <div className="nav-brand-group">
                 <Brand />
-                <a className="nav-login nav-login-mobile" href="https://app.bidiischools.co.ke" target="_blank" rel="noopener noreferrer" aria-label="Log in"><LockKeyhole size={12} strokeWidth={2} />Log in</a>
+                <a className="nav-login nav-login-mobile" href={APP_URL} target="_blank" rel="noopener noreferrer" aria-label="Log in"><LockKeyhole size={12} strokeWidth={2} />Log in</a>
               </div>
               <div className={`nav-links ${mobileOpen ? 'open' : ''}`}>
                 <a href="#product" onClick={() => setMobileOpen(false)} data-testid="link-product">Product</a>
                 <a href="#how" onClick={() => setMobileOpen(false)} data-testid="link-how-it-works">How it works</a>
                 <a href="#pricing" onClick={() => setMobileOpen(false)} data-testid="link-pricing">Pricing</a>
                 <a href="#security" onClick={() => setMobileOpen(false)} data-testid="link-security">Trust</a>
-                <a className="nav-login nav-login-desktop" href="https://app.bidiischools.co.ke" target="_blank" rel="noopener noreferrer" data-testid="link-nav-login"><LockKeyhole size={14} strokeWidth={2} />Log in</a>
+                <a className="nav-app" href={APP_INSTALL_URL} onClick={() => setMobileOpen(false)} data-testid="link-nav-get-app"><Download size={14} strokeWidth={2} />Get the app</a>
+                <a className="nav-login nav-login-desktop" href={APP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-nav-login"><LockKeyhole size={14} strokeWidth={2} />Log in</a>
                 <button className="nav-demo" onClick={() => { setMobileOpen(false); setModal('demo'); }} data-testid="button-nav-demo">Book a demo</button>
               </div>
               <button className="menu-button" onClick={() => setMobileOpen((open) => !open)} aria-label={mobileOpen ? 'Close menu' : 'Open menu'} aria-expanded={mobileOpen} data-testid="button-mobile-menu">
@@ -441,6 +448,7 @@ function App() {
                   <div className="hero-actions">
                     <button className="button-primary" onClick={() => setModal('demo')} data-testid="button-hero-demo">Book a demo <ArrowRight size={17} /></button>
                     <button className="button-secondary" onClick={() => navigate('product')} data-testid="button-hero-action">See Bidii in action <ArrowDownRight size={17} /></button>
+                    <a className="button-secondary button-link" href={APP_INSTALL_URL} data-testid="link-hero-get-app"><Download size={17} /> Get the app</a>
                   </div>
                   <div className="hero-foot">Built for modern Kenyan schools · ready for the CBC era</div>
                 </Reveal>
@@ -557,7 +565,7 @@ function App() {
             <div className="container">
               <div className="compat-grid">
                 <Reveal><div className="devices" aria-label="Bidii works on phone, tablet and computer"><div className="device device-phone"><div className="device-screen"><span className="mono">Bidii</span><div className="mini-lines"><i /><i /><i /></div></div></div><div className="device device-tablet"><div className="device-screen"><span className="mono">School day</span><div className="mini-lines"><i /><i /><i /></div></div></div><div className="device device-laptop"><div className="device-screen"><span className="mono">Principal view</span><div className="mini-lines"><i /><i /><i /></div></div></div></div></Reveal>
-                <Reveal delay={.1}><div className="section-label eyebrow">Where school happens</div><h2 className="section-title">One book. Every screen.</h2><p className="section-copy">Move from the staff room to the classroom to home without losing the thread. Bidii is designed for Android, iOS and PC.</p><div className="platform-list"><div className="platform-item"><Smartphone size={21} /> Android & iOS <small>for teachers, parents and teams on the move</small></div><div className="platform-item"><Laptop size={21} /> PC web app <small>for deep work, reporting and leadership</small></div><div className="platform-item"><QrCode size={21} /> Offline-friendly library <small>keep essential circulation moving when connectivity is unreliable</small></div></div></Reveal>
+                <Reveal delay={.1}><div className="section-label eyebrow">Where school happens</div><h2 className="section-title">One book. Every screen.</h2><p className="section-copy">Move from the staff room to the classroom to home without losing the thread. Bidii is designed for Android, iOS and PC.</p><div className="platform-list"><div className="platform-item"><Smartphone size={21} /> Android & iOS <small>for teachers, parents and teams on the move</small></div><div className="platform-item"><Laptop size={21} /> PC web app <small>for deep work, reporting and leadership</small></div><div className="platform-item"><QrCode size={21} /> Offline-friendly library <small>keep essential circulation moving when connectivity is unreliable</small></div></div><div className="app-cta"><a className="button-primary button-link" href={APP_INSTALL_URL} data-testid="link-compat-get-app"><Download size={17} /> Get the Bidii app</a><small>Install on Android, iPhone, iPad or PC. No app store needed. Works offline and sends notifications.</small></div></Reveal>
               </div>
             </div>
           </section>
@@ -590,7 +598,7 @@ function App() {
           <div className="container">
             <div className="footer-grid">
               <div><Brand /><p className="footer-copy">Bidii Schools is the AI-powered school management system for the modern Kenyan school.<br /><br />Built for CBC, built for better decisions, built for every school day.</p><button onClick={() => setModal('demo')} data-testid="button-footer-demo">Book a demo <ArrowRight size={14} /></button><a className="trillionaire-credit" href={TRILLIONAIRE_DESIGNS_URL} target="_blank" rel="noopener noreferrer" data-testid="link-trillionaire-designs">Powered by Trillionaire Designs</a></div>
-              <div><h4>Explore</h4><a href="#product" data-testid="link-footer-product">Product</a><a href="#academics" data-testid="link-footer-academics">CBC intelligence</a><a href="#ai" data-testid="link-footer-ai">Soma AI</a><a href="#pricing" data-testid="link-footer-pricing">Pricing</a><a href="#compatibility" data-testid="link-footer-compatibility">Compatibility</a></div>
+              <div><h4>Explore</h4><a href="#product" data-testid="link-footer-product">Product</a><a href="#academics" data-testid="link-footer-academics">CBC intelligence</a><a href="#ai" data-testid="link-footer-ai">Soma AI</a><a href="#pricing" data-testid="link-footer-pricing">Pricing</a><a href="#compatibility" data-testid="link-footer-compatibility">Compatibility</a><a href={APP_INSTALL_URL} data-testid="link-footer-get-app">Get the app</a></div>
               <div><h4>Good to know</h4><button onClick={() => setModal('terms')} data-testid="button-footer-terms">Terms of service</button><button onClick={() => setModal('privacy')} data-testid="button-footer-privacy">Privacy policy</button><button onClick={() => setModal('conditions')} data-testid="button-footer-conditions">Conditions & acceptable use</button><a href="mailto:bidiisoftwares.1.ke@gmail.com" data-testid="link-footer-email"><Mail size={13} style={{ verticalAlign: 'middle', marginRight: 6 }} />bidiisoftwares.1.ke@gmail.com</a><a href="tel:0182319029" data-testid="link-footer-phone"><Phone size={13} style={{ verticalAlign: 'middle', marginRight: 6 }} />0182319029</a></div>
             </div>
             <div className="footer-bottom"><span>© 2025 Bidii Schools. Made with effort in Kenya.</span><span className="mono">Manage · Understand · Persevere</span></div>

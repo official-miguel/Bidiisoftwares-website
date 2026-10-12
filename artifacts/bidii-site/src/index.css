@@ -618,3 +618,13 @@ body { background: var(--bidii-surface); color: var(--bidii-ink); }
 .loader-credit:hover { color: #b9d978; }
 @keyframes clockHour { to { transform: rotate(360deg); } }
 @keyframes clockMinute { to { transform: rotate(360deg); } }
+
+/* "Get the app" — links to the Bidii app's /install page */
+.button-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.nav-links .nav-app { display: inline-flex; align-items: center; gap: 6px; color: var(--bidii-teal); font-weight: 600; }
+.nav-links .nav-app:hover { color: var(--bidii-teal-dark); }
+.app-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 32px; }
+.app-cta small { max-width: 300px; color: #68707c; font-size: .78rem; line-height: 1.5; }
+/* .devices is 130% wide (then scaled down) on phones; without a 0 minimum the
+   column grows to fit it and clips the section's text and the app CTA. */
+@media (max-width: 900px) { .compat-grid { grid-template-columns: minmax(0, 1fr); } }
